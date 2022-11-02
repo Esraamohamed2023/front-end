@@ -1,0 +1,1157 @@
+/* start variables */
+
+:root {
+    --main-color: #19c8fa;
+    --transparent-color: rgb(15 116 143 /70%)
+}
+
+
+/* End Global Rules */
+
+
+/* start main component */
+
+.special-comp {
+    font-size: 20px;
+    color: rgb(65, 62, 62);
+    line-height: 2em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+
+/*  End  main component */
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* height: 400vh; */
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+
+/* small  */
+
+
+/* @media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+/* medium  */
+
+
+/* @media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+} */
+
+
+/* large  */
+
+
+/* @media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+} */
+
+*/
+/* End Global Rules */
+
+
+/* start header */
+
+header {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 97px;
+}
+
+header .container::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: calc(100% - 30px);
+    background-color: #a2a2a2;
+    ;
+    bottom: 0;
+    left: 15px;
+}
+
+header .container .logo img {
+    height: 30px;
+}
+
+header .container nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .container nav ul {
+    display: flex;
+}
+
+
+/* @media(max-width:767px) {
+    header .container nav ul {
+        display: none;
+    }
+} */
+
+header .container nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 40px 10px;
+    transition: .3s;
+    z-index: 3;
+    position: relative;
+}
+
+header .container nav .toggle-menu {
+    color: white;
+    font-size: 22px;
+}
+
+
+/* @media (min-width:768px) {
+    header .container nav .toggle-menu {
+        display: none;
+    }
+} */
+
+header .container nav .toggle-menu:hover+ul {
+    display: flex;
+    flex-direction: column;
+    border-color: (#000 /50%);
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+}
+
+header .container nav li a {
+    padding: 15px !important;
+}
+
+header .container nav .form {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-left: 30px;
+    border-left: 1px solid white;
+}
+
+header .container nav .form i {
+    color: white;
+    font-size: 18px;
+    right: 0;
+    position: absolute;
+    transform: translatey(50%)
+}
+
+header .container nav ul li a.active,
+header .container nav ul li a:hover {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+
+/* End header */
+
+
+/* start landing */
+
+.landing {
+    position: relative;
+    min-height: 100vh;
+    background-image: url("../landing.jpg");
+    background-size: cover;
+    /* background-color: #1f2012; */
+}
+
+.landing .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: (0 0 0/50%); */
+}
+
+.landing .container .text {
+    width: 500px;
+    height: 400px;
+    background-color: var(--transparent-color);
+    opacity: .50;
+    transform: translate(0, 200px);
+    padding: 50px;
+    left: 0;
+    position: absolute;
+}
+
+
+/* @media (min-width:768px) {
+    .landing .container .text {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (min-width:768px) {
+    .landing .container .text h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+} */
+
+.landing .container .text h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    opacity: 100%;
+}
+
+.landing .container .text p {
+    color: white;
+    transform: translateY(60px);
+}
+
+.landing .container .text i {
+    transform: translate(-10px, 130px);
+    color: white;
+    font-size: 20px;
+}
+
+.landing .container .sec {
+    font-size: 20px;
+    right: 0;
+    position: absolute;
+    color: white;
+    bottom: 50%;
+    transform: translateY(-50%);
+}
+
+.landing .container .icon {
+    bottom: 10px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 50%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.landing .container .icon>div {
+    width: 20px;
+    height: 20px;
+    border: solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.landing .container .icon .special {
+    background-color: var(--transparent-color);
+}
+
+
+/* End landing */
+
+
+/* start services */
+
+.services {
+    background-color: white;
+    /* height: 120vh;  */
+}
+
+.services .container {
+    background-color: white;
+}
+
+.services .container .first {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 0 40px 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.services .container .first h2 {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.services .container .first h2::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    background-color: black;
+    top: 50px;
+    left: -4px;
+}
+
+.services .container .first h2::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 45px;
+    left: 50px;
+    border-radius: 50%;
+    outline: 2px black solid;
+    background-color: white;
+}
+
+.services .container .first p {
+    position: absolute;
+    top: 100px;
+    margin-left: 150px;
+    color: #777;
+    text-align: center;
+}
+
+.services .container .ser-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+.services .container .col i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.services .container .col .col-text {
+    margin-top: -25px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.services .container .col .col-text h2 {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.services .container .res-des {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 600px;
+    height: 300px;
+    background-color: var(--transparent-color);
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.services .container .res-des h2 {
+    width: 100%;
+    text-align: start;
+    margin-left: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+.services .container .res-des i {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.services .container .desgin {
+    position: relative;
+    background-image: url("../design-features.jpg");
+    width: 100%;
+    height: 500px;
+    /* background-image: url("../mobile.png"); */
+    background-repeat: no-repeat;
+    /* background-position-x: 90px;
+      background-position-y: 223px; */
+    background-size: cover;
+}
+
+.services .container .desgin .pic {
+    background-image: url("../mo.png");
+    width: 400px;
+    height: 500px;
+    background-position-x: 10px;
+    background-position-y: 160px;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: -400px;
+    background-size: 50%;
+}
+
+.services .container .desgin .res-des h4 {
+    margin-left: 50px;
+    color: white;
+    margin-top: -30px;
+    font-size: 20px;
+}
+
+
+/* End services */
+
+
+/* start portfolio */
+
+.portfolio {
+    background-color: white;
+    height: 100vh;
+}
+
+.portfolio .container .second {
+    justify-items: center;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    margin: 30px 50px 30px 50px;
+    position: relative;
+}
+
+.portfolio .container .second h2 {
+    text-align: center;
+    justify-self: center;
+    position: absolute;
+}
+
+.portfolio .container .second h2::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    background-color: black;
+    top: 50px;
+    left: -4px;
+}
+
+.portfolio .container .second h2::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 45px;
+    left: 50px;
+    border-radius: 50%;
+    outline: 2px black solid;
+    background-color: white;
+}
+
+.portfolio .container .second p {
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.8em;
+    width: 50%;
+}
+
+.portfolio .container .four {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 100px;
+}
+
+.portfolio .container .four>div {
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+}
+
+.portfolio .container .four .four-active span {
+    width: 50px;
+    height: 50px;
+}
+
+.portfolio .container .four .four-active {
+    background-color: var(--main-color);
+    width: 40px;
+    height: 40px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin-top: -3px;
+}
+
+.portfolio .container .image {
+    margin-top: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: grid;
+    position: relative;
+}
+
+.portfolio .container .image>div img {
+    width: 400px;
+    height: 300px;
+    transition: .3s;
+}
+
+.portfolio .container .image .image-1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio .container .image .image-1 .te {
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    transition: .3s;
+    left: 0;
+    padding: 10px;
+    bottom: -100%;
+    position: absolute;
+}
+
+.portfolio .container .image .image-1 .te span {
+    color: rgb(84, 84, 190);
+}
+
+.portfolio .container .image>div:hover img {
+    transform: rotate(3deg) scale(1.1);
+}
+
+.portfolio .container .image>div:hover .te {
+    display: block;
+    bottom: 0;
+}
+
+.portfolio .container .more {
+    background-color: var(--main-color);
+    width: 60px;
+    height: 40px;
+    margin: 30px 50px 30px 50px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    transform: translate(500px, 0px);
+    cursor: pointer;
+}
+
+.portfolio .container .video video {
+    width: 100%;
+}
+
+.portfolio .container .video {
+    position: relative;
+}
+
+.portfolio .container .video .ve {
+    background-color: var(--main-color);
+    position: absolute;
+    transform: translate(0, -400px);
+    width: 100%;
+    height: 200px;
+    left: 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    opacity: 50%;
+}
+
+.portfolio .container .video .ve h2 {
+    font-size: 30px;
+    line-height: 1.8em;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.portfolio .container .video .ve button {
+    background-color: black;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+}
+
+
+/* End portfolio */
+
+
+/* start About */
+
+.about {
+    position: relative;
+    top: 150vh;
+}
+
+.about .container .abo {
+    position: relative;
+}
+
+.about .container .abo ::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    background-color: black;
+    top: 50px;
+    left: 45%;
+}
+
+.about .container .abo ::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 45px;
+    left: 50%;
+    border-radius: 50%;
+    outline: 2px black solid;
+    background-color: white;
+}
+
+.about .container .abo h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about .container .abo p {
+    width: 50%;
+    text-align: center;
+    margin-left: 30%;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.about .container .abo-pic {
+    background-size: 50%;
+    margin-top: 40px;
+    margin-left: 140px;
+}
+
+.about .container .picture {
+    margin-top: -120px;
+    position: relative;
+}
+
+.about .container .picture img {
+    height: 300px;
+    width: 100%;
+}
+
+.about .container .picture img ::before {
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    opacity: 60%;
+}
+
+.about .container .picture .coll {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: var(--main-color);
+    transform: translate(90px, -200px);
+    height: 150px;
+    opacity: .70;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.about .container .picture .coll h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.about .container .picture .coll i {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 10px solid black;
+    background-color: black;
+}
+
+.about .container .picture .coll p {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+
+/* start last part */
+
+.about .container .another {
+    display: flex;
+}
+
+.about .container .another .one {}
+
+.about .container .another .one h2 {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.about .container .another .one h2 p {
+    margin-top: 50px;
+}
+
+.about .container .another .one img {
+    border-radius: 50%;
+    width: 30%;
+}
+
+.about .container .another .one p {
+    margin: -150px 0 100px 200px;
+    text-align: center;
+}
+
+.about .container .another .one h5 {
+    margin-left: 400px;
+    opacity: 50%;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.about .container .another .one hr {
+    width: 60%;
+    margin: 0 0 0 200px;
+}
+
+.about .container .another .one .red {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: 50px 0 0 270px;
+}
+
+.about .container .another .one .red div {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border: 1px solid silver;
+    margin-right: 10px;
+}
+
+.about .container .another .one .red .act {
+    background-color: var(--main-color);
+}
+
+.about .container .another .second {
+    margin-left: 30px;
+}
+
+.about .container .another .second h2 {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.about .container .another .second p {
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 80px;
+    font-size: 20px;
+}
+
+.about .container .another .second h3 {
+    font-size: 20px;
+    font-weight: normal;
+    opacity: 50%;
+    margin-bottom: 20px;
+}
+
+.about .container .another .second .three {
+    margin: 160px 0 0 30px;
+}
+
+.about .container .another .second .three span {
+    background-color: blue;
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.about .container .another .second .three span::before {
+    content: attr(data-progress);
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background-color: black;
+    border-radius: 15%;
+    color: white;
+    top: -40px;
+    right: -18px;
+    padding: 4px;
+    text-align: center;
+}
+
+.about .container .another .second .three span::after {
+    content: "";
+    position: absolute;
+    border-color: black transparent transparent transparent;
+    width: 0px;
+    height: 0px;
+    border-width: 10px;
+    border-style: solid;
+    right: -10px;
+    top: -12px;
+}
+
+.about .container .another .second .three div {
+    margin-bottom: 30px;
+    background-color: #eee;
+    width: 100%;
+    height: 30px;
+}
+
+.about .container .another .second .three .e1 {}
+
+.about .container .four {
+    position: relative;
+}
+
+.about .container .four img {
+    height: 200px;
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.about .container .four q {
+    position: absolute;
+    left: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    top: 70px;
+}
+
+
+/* End last part */
+
+
+/* End About */
+
+
+/* start price */
+
+.price .container {
+    margin-top: 150vh;
+}
+
+.price .container .five {
+    position: relative;
+    text-align: center;
+}
+
+.price .container .five div {
+    margin-bottom: 40px;
+}
+
+.price .container .five p {
+    font-size: 20px;
+    width: 60%;
+    text-align: center;
+    margin-left: 220px;
+}
+
+.price .container .five ::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    background-color: black;
+    top: 50px;
+    left: 45%;
+}
+
+.price .container .five ::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 45px;
+    left: 50%;
+    border-radius: 50%;
+    outline: 2px black solid;
+    background-color: white;
+}
+
+.price .container .buy {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.price .container .buy .buy1 {
+    background-color: rgb(223, 217, 217);
+    width: 20%;
+    min-height: 300px;
+}
+
+.price .container .buy .buy1 hr {
+    width: 212px;
+    border: .5px solid var(--main-color);
+}
+
+.price .container .buy .buy1 div {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.price .container .buy .buy1 button {
+    text-align: center;
+    margin: 10px 0 10px 60px;
+    border: 1px solid var(--main-color);
+    width: 100px;
+}
+
+.price .container .buy .buy1 span {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.price .container .buy .buy1 .b1 {
+    height: 70px;
+    margin-top: 40px;
+}
+
+.b2,
+.b3,
+.b4,
+.b5,
+.b6 {
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.price .container .ne {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    margin-left: 400px;
+}
+
+.price .container .ne button {
+    margin: 20px;
+    width: 200px;
+    background-color: rgb(99, 99, 192);
+    height: 50px;
+    margin-left: 80px;
+}
+
+.price .container .nx {
+    background-image: url("../subscribe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    color: white;
+    filter: grayscale(50%);
+}
+
+.price .container .nx input {
+    text-align: center;
+    margin: 50px 0 0 230px;
+    height: 50px;
+    width: 300px;
+    position: relative;
+}
+
+.price .container .nx form input ::before {
+    position: absolute;
+    content: "subscribe";
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+}
+
+.price .container .nx p {
+    text-align: center;
+    width: 50%;
+    transform: translate(100%, -50px);
+}
+
+
+/* End price */
+
+
+/* start conect */
+
+.conect-us {
+    margin-top: 50px;
+}
+
+.conect-us .container .form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conect-us .container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.conect-us .container input {
+    margin: 10px 10px 10px 10px;
+    height: 50px;
+    text-align: start;
+}
+
+.conect-us .container form .active {
+    height: 200px;
+    margin-left: 7px;
+}
+
+.conect-us .container .form section {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.conect-us .container .form section h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.conect-us .container .form section p {
+    width: 40%;
+}
+
+.conect-us .container .form article {
+    transform: translate(0px, 80px);
+}
+
+.conect-us .container button {
+    background-color: #53538b;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    transform: translate(500px, 10px);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+/* End conect */
+
+
+/* start footer */
+
+.footer .container {
+    background-image: url("../subscribe.jpg");
+    background-size: cover;
+    height: 350px;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    filter: brightness(30%);
+    position: relative;
+}
+
+.footer .container .log {
+    margin-bottom: 50px;
+    top: 30px;
+    position: absolute;
+    transform: translate(500px, -10px);
+}
+
+.footer .container h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 50px;
+    transform: translate(450px, 100px);
+}
+
+.footer .container hr {
+    width: 20%;
+    transform: translate(430px, 200px);
+    position: absolute;
+}
+
+.footer .container .icon {
+    transform: translate(450px, 230px);
+    position: absolute;
+}
+
+.footer .container .icon i {
+    margin-left: 20px;
+}
+
+.footer .container p {
+    position: absolute;
+    transform: translate(410px, 300px);
+    font-size: 20px;
+}
+
+.footer .container span {
+    color: var(--main-color);
+    font-weight: 900;
+}
+
+
+/* End footer */

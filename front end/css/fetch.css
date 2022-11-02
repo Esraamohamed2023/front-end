@@ -1,0 +1,77 @@
+                            * {
+                                box-sizing: border-box;
+                            }
+                            
+                            .reps-container {
+                                width: 800px;
+                                margin: auto;
+                                background-color: rgba(216, 213, 213, 0.933);
+                            }
+                            
+                            .reps-container .get-reps {
+                                display: flex;
+                                padding: 20px;
+                                background-color: #eee;
+                            }
+                            
+                            .reps-container .get-reps input[type="text"] {
+                                width: 100%;
+                                padding: 20px;
+                                border: none;
+                                height: 55px;
+                                font-size: 20px;
+                            }
+                            
+                            .reps-container .get-reps input:focus {
+                                outline: 2px solid #f44336;
+                            }
+                            
+                            .reps-container .get-reps .get-btn {
+                                width: 140px;
+                                height: 55px;
+                                margin-left: 10px;
+                                background-color: #f44336;
+                                color: white;
+                                text-align: center;
+                                cursor: pointer;
+                                font-weight: bold;
+                                line-height: 55px;
+                            }
+                            
+                            .reps-container .show-data {
+                                padding: 20px;
+                                background-color: rgb(182, 181, 181);
+                                text-transform: capitalize;
+                                font-weight: bold;
+                                font-size: 20px;
+                            }
+                            
+                            .reps-container .show-data .element-box {
+                                padding: 15px;
+                                background-color: white;
+                                margin-bottom: 5px;
+                            }
+                            
+                            .reps-container .show-data .element-box:not(:last-child) {
+                                border-bottom: 1px solid gray;
+                            }
+                            
+                            .reps-container .show-data .element-box a,
+                            .reps-container .show-data .element-box span {
+                                margin-bottom: 2px;
+                                padding: 2px;
+                                border-radius: 5px;
+                                float: right;
+                                text-align: center;
+                                color: white;
+                            }
+                            
+                            .reps-container .show-data .element-box span {
+                                background-color: #f44336;
+                                margin-right: 5px;
+                            }
+                            
+                            .reps-container .show-data .element-box a {
+                                text-decoration: none;
+                                background-color: rgb(12, 12, 193);
+                            }

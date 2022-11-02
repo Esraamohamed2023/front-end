@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quiz_app {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f8f8f8;
+    width: 800px;
+}
+
+.quiz_app .quiz_info {
+    background-color: white;
+    display: flex;
+    padding: 20px;
+}
+
+.quiz_app .quiz_info .catagory {
+    flex: 1;
+}
+
+.quiz_app .quiz_info .count {
+    flex: 1;
+    text-align: right;
+}
+
+.quiz_app .quiz_area {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.quiz_app .quiz_area h2 {
+    margin: 0;
+}
+
+.quiz_app .answer_area {
+    padding: 20px;
+    background-color: white;
+}
+
+.quiz_app .answer_area .answer {
+    padding: 15px;
+    background-color: #eee;
+}
+
+.quiz_app .answer_area .answer:not(:last-child) {
+    border-bottom: 1px solid gray;
+}
+
+.quiz_app .answer_area .answer input[type="Radio"]:checked+label {
+    color: #0075ff;
+}
+
+.quiz_app .answer_area .answer label {
+    font-weight: bold;
+    cursor: pointer;
+    color: #777;
+}
+
+.quiz_app .submit_answer {
+    background-color: #0075ff;
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 20px auto;
+}
+
+.quiz_app .bullets {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    position: relative;
+}
+
+.quiz_app .bullets .spans {
+    flex: 1;
+    display: flex;
+    /* width: 100px; */
+    /* height: 200px; */
+}
+
+.quiz_app .bullets .spans span {
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.quiz_app .bullets .spans .one {
+    background-color: #0075ff;
+}
+
+.quiz_app .bullets .countdown {
+    position: absolute;
+    right: 10px;
+}
+
+.quiz_app .results span {
+    font-weight: bold;
+}
+
+.quiz_app .results .bad {
+    color: red;
+}
+
+.quiz_app .results .good {
+    color: green
+}
+
+.quiz_app .results .prefect {
+    color: #0075ff
+}

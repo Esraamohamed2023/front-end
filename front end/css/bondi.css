@@ -1,0 +1,297 @@
+                                                    :root {
+                                                       --dark-clor: #274065;
+                                                       --main-color: #33d1cc;
+                                                       --red-color: #ff3150;
+                                                       --yellow-color: #ffc400;
+                                                       --section: rgb(216, 216, 238);
+                                                   }
+                                                   
+                                                   body {
+                                                       font-family: 'Roboto', sans-serif;
+                                                       height: 5000px;
+                                                       /* overflow-x: hidden; */
+                                                   }
+                                                   
+                                                   .navbar {
+                                                       background-color: var(--dark-clor);
+                                                   }
+                                                   
+                                                   .navbar .navbar-nav .nav-link {
+                                                       color: white;
+                                                   }
+                                                   
+                                                   .navbar .navbar-nav .nav-link.active,
+                                                   .navbar .navbar-nav .nav-link:hover,
+                                                   .navbar .navbar-nav .nav-link:focus {
+                                                       color: var(--main-color);
+                                                   }
+                                                   
+                                                   .navbar .search {
+                                                       border-left: 1px solid var(--main-color);
+                                                   }
+                                                   
+                                                   .navbar .search svg {
+                                                       color: var(--main-color);
+                                                       /* padding: 5px; */
+                                                       margin-left: 8px;
+                                                   }
+                                                   
+                                                   .navbar .navbar-toggler {
+                                                       color: white;
+                                                       font-size: 25px;
+                                                       border-color: white;
+                                                   }
+                                                   
+                                                   .navbar .navbar-toggler:focus {
+                                                       box-shadow: none;
+                                                   }
+                                                   
+                                                   .navbar .navbar-toggler[aria-expanded="true"] {
+                                                       border-color: var(--main-color);
+                                                       border-width: 2px;
+                                                   }
+                                                   
+                                                   .landing {
+                                                       background-color: var(--dark-clor);
+                                                       min-height: calc(100vh - 72px);
+                                                       display: flex;
+                                                       justify-content: center;
+                                                       align-items: center;
+                                                   }
+                                                   
+                                                   .main-btn {
+                                                       background-color: var(--red-color);
+                                                       border: none;
+                                                       color: var(--yellow-color);
+                                                   }
+                                                   
+                                                   .container .main-btn:hover {
+                                                       /* box-shadow: 2 2 2 2 var(--dark-clor); */
+                                                   }
+                                                   /* .main-title p::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    background-color: var(--main-color);
+    bottom: -10px;
+    top: 100%;
+    left: 45%;
+} */
+                                                   
+                                                   .feature .icons {
+                                                       height: 200px;
+                                                   }
+                                                   
+                                                   .feature .icons svg {
+                                                       left: 50%;
+                                                       transform: translateX(-50%);
+                                                   }
+                                                   
+                                                   .feature h3 {
+                                                       color: var(--yellow-color);
+                                                   }
+                                                   
+                                                   .feature .icons .number {
+                                                       font-size: 12rem;
+                                                       color: var(--dark-clor);
+                                                       opacity: 20%;
+                                                   }
+                                                   
+                                                   .feature .icons .icon {
+                                                       color: var(--main-color);
+                                                   }
+                                                   
+                                                   .feature .row {
+                                                       margin-top: 100px
+                                                   }
+                                                   
+                                                   .feature .row h3 {
+                                                       margin-left: 80px;
+                                                   }
+                                                   
+                                                   .our-work {
+                                                       background-color: var(--section);
+                                                       min-height: 100vh;
+                                                   }
+                                                   
+                                                   .our-work .container .main-title img {
+                                                       margin-top: 70px;
+                                                   }
+                                                   
+                                                   .our-work .container ul li {
+                                                       margin-left: 20px;
+                                                       color: black;
+                                                       padding: 10px;
+                                                   }
+                                                   
+                                                   .our-work .container ul li:hover {
+                                                       color: var(--red-color);
+                                                   }
+                                                   
+                                                   .our-work .container ul li.active {
+                                                       background-color: var(--red-color);
+                                                       color: var(--yellow-color);
+                                                       width: 70px;
+                                                   }
+                                                   
+                                                   .our-work .box {
+                                                       position: relative;
+                                                       overflow: hidden;
+                                                       padding: 5px;
+                                                   }
+                                                   
+                                                   .our-work .box::after {
+                                                       position: absolute;
+                                                       content: attr(data-work);
+                                                       width: calc(100% - 10px);
+                                                       height: calc(100% - 10px);
+                                                       background-color: rgb(169 212 169 / 70%);
+                                                       left: calc(-100% - 5px);
+                                                       top: 5px;
+                                                       color: white;
+                                                       font-weight: 900;
+                                                       font-size: 25px;
+                                                       display: flex;
+                                                       justify-content: center;
+                                                       justify-items: center;
+                                                       transition: .3s;
+                                                       align-items: center;
+                                                   }
+                                                   
+                                                   .our-work .box:hover::after {
+                                                       left: 5px;
+                                                   }
+                                                   
+                                                   .our-work .container .btnn {
+                                                       align-items: center;
+                                                       color: var(--yellow-color);
+                                                       text-transform: uppercase;
+                                                       display: flex;
+                                                       justify-content: center;
+                                                       justify-items: center;
+                                                   }
+                                                   
+                                                   .discription {
+                                                       max-width: 500px;
+                                                   }
+                                                   
+                                                   .need h2 {
+                                                       color: var(--yellow-color);
+                                                   }
+                                                   
+                                                   .meet {
+                                                       background-color: var(--section);
+                                                       margin-top: 100px;
+                                                   }
+                                                   
+                                                   .meet .container .row .box img {
+                                                       /* width: 300px; */
+                                                       max-width: 300px;
+                                                   }
+                                                   
+                                                   .meet .container .row .box h2 {
+                                                       background-color: var(--main-color);
+                                                       color: white;
+                                                       transform: translate(0px, -50px);
+                                                       padding: 15px;
+                                                       min-width: 300px;
+                                                   }
+                                                   
+                                                   .meet .box {
+                                                       min-width: 300px;
+                                                       position: relative;
+                                                   }
+                                                   
+                                                   .meet .container .row blockquote {
+                                                       transform: translate(0px, -50px);
+                                                       padding: 10px;
+                                                       height: 50px;
+                                                       min-width: 270px;
+                                                   }
+                                                   
+                                                   .start {
+                                                       background-color: var(--dark-clor);
+                                                       height: 200px
+                                                   }
+                                                   
+                                                   .start .container h2 {
+                                                       color: white;
+                                                   }
+                                                   
+                                                   .start .container p {
+                                                       color: rgb(242 233 233/70%);
+                                                       margin-top: 20px;
+                                                   }
+                                                   
+                                                   .blug .row .nn img {
+                                                       width: 350px;
+                                                       height: 200px;
+                                                   }
+                                                   
+                                                   .blug .row .nn {
+                                                       border: 1px solid rgb(19 18 18 / 50%);
+                                                       max-width: 350px;
+                                                       margin: 0;
+                                                   }
+                                                   
+                                                   .blug .container .put {
+                                                       display: flex;
+                                                       justify-content: center;
+                                                       justify-items: center;
+                                                   }
+                                                   
+                                                   .sub {
+                                                       background-color: var(--yellow-color);
+                                                       height: 250px;
+                                                   }
+                                                   
+                                                   label {
+                                                       font-weight: 800;
+                                                   }
+                                                   
+                                                   .sub form input[type="text"] {
+                                                       color: white;
+                                                       border: none;
+                                                       margin-left: 30px;
+                                                       background-color: var(--yellow-color);
+                                                       border-bottom: 1px solid white;
+                                                       padding: 10px;
+                                                   }
+                                                   
+                                                   .sub form input[type="submit"] {
+                                                       background-color: black;
+                                                       color: var(--yellow-color);
+                                                       padding: 10px;
+                                                       border-radius: 30px;
+                                                       margin-left: 30px;
+                                                       width: 150px;
+                                                       margin-top: 50px;
+                                                   }
+                                                   
+                                                   .footer {
+                                                       background-color: var(--dark-clor);
+                                                       color: white;
+                                                       min-height: 400px
+                                                   }
+                                                   
+                                                   .footer span {
+                                                       color: var(--main-color);
+                                                   }
+                                                   
+                                                   .footer .row ul li {
+                                                       margin-bottom: 10px;
+                                                       margin-left: 20px;
+                                                       padding: 5px;
+                                                       border-radius: 8px;
+                                                       color: white;
+                                                       opacity: 50%;
+                                                   }
+                                                   
+                                                   .footer .row ul li a:nth-last-of-type() {
+                                                       background-color: blue;
+                                                   }
+                                                   
+                                                   .footer .row ul li.act {
+                                                       background-color: red;
+                                                   }

@@ -1,0 +1,29 @@
+[{
+    "title": "why use <br> tag",
+    "answer_1": "to make horizental",
+    "answer_2": "to make italic ",
+    "answer_3": "to make break line",
+    "answer_4": "to make veritical",
+    "right_answer": "to make break line"
+}, {
+    "title": "why use <img> tag",
+    "answer_1": "to make horizental",
+    "answer_2": "to make italic ",
+    "answer_3": "to make break line",
+    "answer_4": "to add image",
+    "right_answer": "to add image"
+}, {
+    "title": "why use <hr> tag",
+    "answer_1": "to make horizental",
+    "answer_2": "to make italic ",
+    "answer_3": "to make break line",
+    "answer_4": "to add image",
+    "right_answer": "to make horizental"
+}, {
+    "title": "why use <video> tag",
+    "answer_1": "to add video",
+    "answer_2": "to make italic ",
+    "answer_3": "to make break line",
+    "answer_4": "to add image",
+    "right_answer": "to add video"
+}]
